@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency OS | Moonshine Capital Partner Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            900: '#134e4a',
+                            950: '#042f2e',
+                        },
+                        dark: {
+                            900: '#0f1115',
+                            800: '#1a1d24',
+                            700: '#272b36',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .neon-border {
+            box-shadow: 0 0 15px rgba(45, 212, 191, 0.2), inset 0 0 15px rgba(45, 212, 191, 0.1);
+            border: 1px solid rgba(45, 212, 191, 0.3);
+        }
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-dark-900 text-slate-300 font-sans antialiased relative overflow-x-hidden">
+    
+    <!-- Background Grid & Glow -->
+    <div class="absolute inset-0 bg-grid z-0 pointer-events-none"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-brand-500/20 blur-[120px] rounded-full pointer-events-none z-0"></div>
+
+    <!-- Navigation -->
+    <nav class="relative z-10 border-b border-white/10 bg-dark-900/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <i data-lucide="crosshair" class="text-brand-400 w-8 h-8"></i>
+                <span class="text-white font-display font-bold text-xl tracking-tight">MOONSHINE<span class="text-brand-400">CAPITAL</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#problem" class="text-sm font-semibold hover:text-brand-400 transition-colors">The Problem</a>
+                <a href="#solution" class="text-sm font-semibold hover:text-brand-400 transition-colors">The "Double Dip"</a>
+                <a href="#os" class="text-sm font-semibold hover:text-brand-400 transition-colors">Agency OS</a>
+            </div>
+            <a href="#apply" class="bg-brand-500 hover:bg-brand-400 text-dark-900 font-bold py-2.5 px-6 rounded-md transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(20,184,166,0.4)]">
+                Deploy OS
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative z-10 pt-20 pb-24 lg:pt-32 lg:pb-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Copy -->
+                <div class="max-w-2xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-400 text-sm font-bold tracking-wide mb-6">
+                        <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+                        FOR B2B SAAS & GROWTH AGENCIES ONLY
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-display font-bold text-white leading-[1.1] mb-6">
+                        Stop Letting Your Clients' Credit Limits Dictate Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-teal-200">Retainer.</span>
+                    </h1>
+                    <p class="text-xl text-slate-400 mb-8 leading-relaxed">
+                        A winning ad creative is useless if your client's Amex declines. Equip your agency with <strong class="text-white">"Funding-in-a-Box."</strong> Secure your clients up to $100,000 in zero-percent runway to spend exclusively on your services—and earn a commission for being the liquidity architect.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#apply" class="flex justify-center items-center gap-2 bg-brand-500 hover:bg-brand-400 text-dark-900 font-bold py-4 px-8 rounded-md transition-all text-lg shadow-[0_0_20px_rgba(20,184,166,0.3)]">
+                            <i data-lucide="zap" class="w-5 h-5"></i>
+                            Claim Your White-Label Portal
+                        </a>
+                    </div>
+                    
+                    <div class="mt-10 flex items-center gap-6 text-sm text-slate-500 font-medium">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle-2" class="text-brand-400 w-5 h-5"></i>
+                            Zero Risk to Agency
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle-2" class="text-brand-400 w-5 h-5"></i>
+                            No Lenders License Required
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Card -->
+                <div class="relative" id="apply">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-500 to-teal-300 rounded-xl blur opacity-20"></div>
+                    <div class="relative bg-dark-800 p-8 rounded-xl neon-border">
+                        <h3 class="text-2xl font-display font-bold text-white mb-2">Request Agency OS Access</h3>
+                        <p class="text-sm text-slate-400 mb-6">Gain exclusive access to our sub-affiliate funding portal and white-labeled infrastructure.</p>
+                        
+                        <form id="partnerForm" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Agency Name</label>
+                                <input type="text" required class="w-full bg-dark-900 border border-white/10 rounded-md px-4 py-3 text-white focus:outline-none focus:border-brand-400 focus:ring-1 focus:ring-brand-400 transition-colors" placeholder="Acme Growth Partners">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Your Name</label>
+                                <input type="text" required class="w-full bg-dark-900 border border-white/10 rounded-md px-4 py-3 text-white focus:outline-none focus:border-brand-400 focus:ring-1 focus:ring-brand-400 transition-colors" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Work Email</label>
+                                <input type="email" required class="w-full bg-dark-900 border border-white/10 rounded-md px-4 py-3 text-white focus:outline-none focus:border-brand-400 focus:ring-1 focus:ring-brand-400 transition-colors" placeholder="john@acmegrowth.com">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Monthly Agency Revenue (Avg)</label>
+                                <select required class="w-full bg-dark-900 border border-white/10 rounded-md px-4 py-3 text-white focus:outline-none focus:border-brand-400 focus:ring-1 focus:ring-brand-400 appearance-none transition-colors">
+                                    <option value="" disabled selected>Select Revenue Range...</option>
+                                    <option value="under10k">Under $10k / mo</option>
+                                    <option value="10k-50k">$10k - $50k / mo</option>
+                                    <option value="50k-100k">$50k - $100k / mo</option>
+                                    <option value="100k+">$100k+ / mo</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-brand-500 hover:bg-brand-400 text-dark-900 font-bold text-lg py-4 rounded-md transition-all mt-4">
+                                Initialize OS Deployment
+                            </button>
+                        </form>
+                        
+                        <div id="successMessage" class="hidden absolute inset-0 bg-dark-800 rounded-xl flex-col justify-center items-center p-8 text-center neon-border z-20">
+                            <i data-lucide="shield-check" class="w-16 h-16 text-brand-400 mb-4"></i>
+                            <h3 class="text-2xl font-display font-bold text-white mb-2">Target Acquired.</h3>
+                            <p class="text-slate-400">Your application has been logged. A Liquidity Logistics Director will contact you within 24 hours to set up your portal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The "Broad Lie" vs "Sniper Truth" -->
+    <section id="problem" class="relative z-10 py-20 bg-dark-800/50 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-brand-400 font-bold tracking-widest uppercase text-sm mb-2">The Market Reality</h2>
+                <h3 class="text-3xl md:text-4xl font-display font-bold text-white">Client Churn Isn't a Marketing Problem. <br/> It's a <span class="border-b-2 border-brand-500">Liquidity Problem.</span></h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- The Lie -->
+                <div class="bg-dark-900 p-8 rounded-lg border border-red-500/20 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-red-500/10 blur-2xl rounded-full"></div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <i data-lucide="x-circle" class="text-red-500 w-6 h-6"></i>
+                        <h4 class="text-xl font-bold text-white">The Status Quo</h4>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed mb-4">
+                        Agencies believe they lose clients because of ROI or lead quality. The reality? You find a winning ad campaign, but the client forces you to pause because their corporate credit card hit its limit. You are essentially acting as an unpaid bank, letting your growth scale be capped by your client's broken cash flow.
+                    </p>
+                </div>
+
+                <!-- The Truth -->
+                <div class="bg-dark-900 p-8 rounded-lg neon-border relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-brand-500/10 blur-2xl rounded-full"></div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <i data-lucide="crosshair" class="text-brand-400 w-6 h-6"></i>
+                        <h4 class="text-xl font-bold text-white">The Sniper Truth</h4>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed mb-4">
+                        Do not sell financing. Simply <strong>enable your own sales</strong>. When a client's cash flow gets clogged, use our infrastructure to unclog it so your primary deal flows through. You are the architect; we are the plumbing. We manufacture the runway they need to pay your invoices effortlessly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The "Double Dip" Mechanism -->
+    <section id="solution" class="relative z-10 py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-brand-400 font-bold tracking-widest uppercase text-sm mb-2">The Unfair Advantage</h2>
+                <h3 class="text-4xl font-display font-bold text-white mb-4">The "Double-Dip" Protocol</h3>
+                <p class="text-slate-400 text-lg">Turn a lost retainer into a dual-revenue event.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                <!-- Connector Line -->
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-brand-500/50 to-transparent -translate-y-1/2 z-0"></div>
+
+                <div class="relative z-10 bg-dark-800 p-8 rounded-xl border border-white/10 text-center hover:border-brand-500/50 transition-colors">
+                    <div class="w-16 h-16 rounded-full bg-dark-900 border border-brand-500/30 flex items-center justify-center mx-auto mb-6 shadow-[0_0_15px_rgba(20,184,166,0.2)]">
+                        <span class="text-2xl font-bold text-brand-400 font-display">1</span>
+                    </div>
+                    <h4 class="text-white font-bold text-xl mb-3">Detect the Bottleneck</h4>
+                    <p class="text-slate-400 text-sm">Client complains about ad spend budgets, software CapEx, or requests to "pause the retainer until Q3."</p>
+                </div>
+
+                <div class="relative z-10 bg-dark-800 p-8 rounded-xl border border-white/10 text-center hover:border-brand-500/50 transition-colors">
+                    <div class="w-16 h-16 rounded-full bg-dark-900 border border-brand-500/30 flex items-center justify-center mx-auto mb-6 shadow-[0_0_15px_rgba(20,184,166,0.2)]">
+                        <span class="text-2xl font-bold text-brand-400 font-display">2</span>
+                    </div>
+                    <h4 class="text-white font-bold text-xl mb-3">Deploy the OS</h4>
+                    <p class="text-slate-400 text-sm">You send them your white-labeled "Funding Agent" link. We algorithmically approve them for a 0% business credit stack or revenue advance.</p>
+                </div>
+
+                <div class="relative z-10 bg-dark-800 p-8 rounded-xl neon-border text-center transform md:-translate-y-2">
+                    <div class="absolute -inset-1 bg-brand-500 blur opacity-10 rounded-xl"></div>
+                    <div class="w-16 h-16 rounded-full bg-brand-500/20 border border-brand-400 flex items-center justify-center mx-auto mb-6 shadow-[0_0_20px_rgba(20,184,166,0.4)]">
+                        <i data-lucide="coins" class="text-brand-400 w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-white font-bold text-xl mb-3">The Double-Dip Win</h4>
+                    <p class="text-slate-300 text-sm">The client uses the $50k+ capital to <strong>pay your agency retainer</strong>, AND you earn a <strong>4% override commission</strong> on the funding deal itself.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agency OS Features -->
+    <section id="os" class="relative z-10 py-24 bg-dark-800/30 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-brand-400 font-bold tracking-widest uppercase text-sm mb-2">Your Arsenal</h2>
+                    <h3 class="text-4xl font-display font-bold text-white mb-6">Inside the Funding Agent OS</h3>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        We don't just give you an affiliate link and wish you luck. We provide a complete operational toolkit designed to embed liquidity solutions directly into your agency's client dashboard.
+                    </p>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-dark-900 border border-brand-500/30 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="layout-template" class="text-brand-400 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">White-Labeled Portals</h4>
+                                <p class="text-slate-400 text-sm">Your logo, your brand. Clients never feel like they are leaving your ecosystem to secure capital.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-dark-900 border border-brand-500/30 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="code" class="text-brand-400 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Embeddable Pre-Qual Widgets</h4>
+                                <p class="text-slate-400 text-sm">Drop a line of code into your pricing page or client dashboard. Clients can see their funding power instantly without impacting their credit.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-dark-900 border border-brand-500/30 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="mail-check" class="text-brand-400 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Weaponized Email Sequences</h4>
+                                <p class="text-slate-400 text-sm">Plug-and-play copy designed to reactivate dead leads by offering them the capital needed to finally hire you.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-dark-900 border border-brand-500/30 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="shield" class="text-brand-400 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">The $500 "Meet or Beat" Guarantee</h4>
+                                <p class="text-slate-400 text-sm">Zero reputational risk. If our network can't provide the mathematically best deal in the alternative space, we pay your client $500 for wasting their time.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mockup/Visual -->
+                <div class="relative">
+                    <div class="absolute inset-0 bg-brand-500/20 blur-3xl rounded-full"></div>
+                    <div class="relative bg-dark-900 border border-white/10 rounded-xl overflow-hidden shadow-2xl">
+                        <!-- Browser Header -->
+                        <div class="bg-dark-800 px-4 py-3 border-b border-white/5 flex items-center gap-2">
+                            <div class="flex gap-1.5">
+                                <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
+                            </div>
+                            <div class="mx-auto bg-dark-900 text-slate-500 text-xs px-4 py-1 rounded w-1/2 text-center border border-white/5">
+                                agency.portal/funding-dashboard
+                            </div>
+                        </div>
+                        <!-- App Content -->
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-6">
+                                <div class="text-white font-bold">Acme Growth - Liquidity Hub</div>
+                                <div class="text-brand-400 text-sm flex items-center gap-1"><i data-lucide="circle-dot" class="w-3 h-3"></i> System Active</div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div class="bg-dark-800 p-4 rounded-lg border border-white/5">
+                                    <div class="text-slate-500 text-xs mb-1">Capital Deployed (YTD)</div>
+                                    <div class="text-2xl text-white font-display font-bold">$420,500</div>
+                                </div>
+                                <div class="bg-dark-800 p-4 rounded-lg border border-white/5">
+                                    <div class="text-slate-500 text-xs mb-1">Agency Override Commissions</div>
+                                    <div class="text-2xl text-brand-400 font-display font-bold">$16,820</div>
+                                </div>
+                            </div>
+                            <div class="bg-dark-800 rounded-lg p-4 border border-white/5">
+                                <div class="text-sm text-white font-bold mb-3">Recent Client Approvals</div>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-center border-b border-white/5 pb-2">
+                                        <div class="text-slate-300 text-sm">TechFlow SaaS</div>
+                                        <div class="text-brand-400 text-sm font-bold">$75,000 (0% Stack)</div>
+                                    </div>
+                                    <div class="flex justify-between items-center border-b border-white/5 pb-2">
+                                        <div class="text-slate-300 text-sm">Elevate E-Com</div>
+                                        <div class="text-brand-400 text-sm font-bold">$120,000 (Rev Advance)</div>
+                                    </div>
+                                </div>
+                                <button class="w-full mt-4 bg-brand-500/10 text-brand-400 border border-brand-500/30 py-2 rounded text-sm font-bold hover:bg-brand-500/20 transition-colors">
+                                    + Generate Pre-Qual Link for Client
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 border-t border-white/10 py-12 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <i data-lucide="crosshair" class="text-brand-400 w-6 h-6"></i>
+                <span class="text-white font-display font-bold tracking-tight">MOONSHINE<span class="text-brand-400">CAPITAL</span></span>
+            </div>
+            <p class="text-slate-500 text-sm">
+                Strategic Partner Network. Guerrilla Warfare Liquidity Logistics.
+            </p>
+            <div class="text-slate-600 text-xs">
+                &copy; 2026 Moonshine Capital (Distilled Funding). All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Form Submission Logic
+        document.getElementById('partnerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Hide the form visually
+            this.style.opacity = '0';
+            
+            // Show the success state after a brief delay for transition effect
+            setTimeout(() => {
+                this.classList.add('hidden');
+                const successMsg = document.getElementById('successMessage');
+                successMsg.classList.remove('hidden');
+                successMsg.classList.add('flex');
+            }, 300);
+        });
+    </script>
+</body>
+</html>
